@@ -24,7 +24,7 @@ def inversion(rang):
 def tri_bulles():
     maxloop = maxliste-1
     for i in range(0, maxloop):
-        for j in range(1, maxloop):
+        for j in range(1, maxloop+1):
             if liste[j] < liste[j-1]:
                 inversion(j)
         if maxloop > 0 and liste[maxloop] > liste[maxloop-1]:
